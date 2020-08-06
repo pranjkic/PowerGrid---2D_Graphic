@@ -5,8 +5,39 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:PZ2.Presentation"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        
-    </Grid>
+        Title="MainWindow" Width="1500" Height="800" WindowStartupLocation="CenterScreen">
+
+        <DockPanel>
+        <ScrollViewer  Name="scrollViewer" HorizontalScrollBarVisibility="Visible"  VerticalScrollBarVisibility="Visible" PreviewMouseWheel="scrollViewer_PreviewMouseWheel">
+            <Border BorderBrush="Transparent" BorderThickness="1" HorizontalAlignment="Center" VerticalAlignment="Center">
+                <Canvas Name="myCanvas" Width="1400" Height="750" MouseLeftButtonDown="MyCanvas_MouseLeftButtonDown"  MouseRightButtonDown="MyCanvas_MouseRightButtonDown">
+
+                </Canvas>
+            </Border>
+        </ScrollViewer>
+        </DockPanel>       
+
+    <!--    
+    <DockPanel>
+        <ScrollViewer  Name="scrollViewer" HorizontalScrollBarVisibility="Hidden"  VerticalScrollBarVisibility="Hidden" PreviewMouseLeftButtonDown="scrollViewer_PreviewMouseLeftButtonDown" PreviewMouseMove="scrollViewer_PreviewMouseMove" PreviewMouseLeftButtonUp="scrollViewer_PreviewMouseLeftButtonUp" PreviewMouseWheel="scrollViewer_PreviewMouseWheel">
+            <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Center" VerticalAlignment="Center">
+                <Canvas Name="myCanvas" Width="1500" Height="800">
+                    <Image Source="C:\Users\Milica\Desktop\PZ3\PZ3\Images\substation.png" Height="15" Width="15" Canvas.Left="10" Canvas.Top="10"/>
+                    <Image Source="C:\Users\Milica\Desktop\PZ3\PZ3\Images\switch1.png" Height="15" Width="15" Canvas.Left="10" Canvas.Top="30"/>
+                    <Image Source="C:\Users\Milica\Desktop\PZ3\PZ3\Images\node1.png" Height="15" Width="15" Canvas.Left="10" Canvas.Top="50"/>
+                    <Image Source="C:\Users\Milica\Desktop\PZ3\PZ3\Images\horizontalLine.png" Height="16" Width="15" Canvas.Left="10" Canvas.Top="70"/>
+
+                    <TextBlock Text="Substation" FontSize="12" Foreground="White" Canvas.Left="44" Canvas.Top="10" Height="15" Width="66"/>
+                    <TextBlock Text="Switch" FontSize="12" Foreground="White" Canvas.Left="44" Canvas.Top="30" Height="16" Width="55"/>
+                    <TextBlock Text="Node" FontSize="12" Foreground="White" Canvas.Left="44" Canvas.Top="51" Height="14" Width="49"/>
+                    <TextBlock Text="Vertice" FontSize="12" Foreground="White" Canvas.Left="44" Canvas.Top="69" Height="14" Width="49"/>
+                    <Path Name="path" Stroke="Black" StrokeThickness="1"></Path>
+                    <Border BorderThickness="0.5" BorderBrush="White">
+                        <Image Name="mainScreen" ></Image>
+                    </Border>
+
+                </Canvas>
+            </Border>
+        </ScrollViewer>
+    </DockPanel>-->
 </Window>

@@ -94,5 +94,16 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\PZ2.Model\PZ2.Model.csproj">
+      <Project>{5f420edd-3bc8-4fed-9d41-77f73c6f8062}</Project>
+      <Name>PZ2.Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PZ2.Repository\PZ2.Repository.csproj">
+      <Project>{1f79b038-8ffc-4aa5-8cbb-735724e575ba}</Project>
+      <Name>PZ2.Repository</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
